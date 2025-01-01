@@ -8,6 +8,8 @@ import Sidebar from '@/components/Sidebar';
 import MobileNavigation from '@/components/MobileNavigation';
 import Header from '@/components/Header';
 
+export const dynamic = 'force-dynamic';
+
 const Layout = async ({ children }: { children: React.ReactNode }) => {
   const currentUser = await getCurrentUser();
 
